@@ -1,6 +1,6 @@
 #!/bin/bash
-read -p "Write your name= " username
-echo "Welcome $username. How can i help you in your calculation."
+read -p "Write your name= " uname
+echo "Welcome $uname. How can i help you in your calculation."
 read -p "Enter First number= " a
 read -p "Enter second number= " b
 echo "Select what you want to do: + - / * "
