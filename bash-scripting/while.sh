@@ -44,4 +44,7 @@ echo "Access granted"
 
 #Use a while loop to check the disk usage of /home every 5 seconds. Stop the loop if usage goes above 80%.
 
-while [ 
+while [ df -h  ] 
+do 
+done
+ 
