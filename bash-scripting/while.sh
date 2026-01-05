@@ -44,7 +44,18 @@ echo "Access granted"
 
 #Use a while loop to check the disk usage of /home every 5 seconds. Stop the loop if usage goes above 80%.
 
-while [ df -h  ] 
+while true
 do 
+
+usage=$( df /mnt/c | awk 'NR==2 {print $5}' | sed 's/%//')
+echo " disk usage: $usage " 
+
+if [ $usage -gt 80 ]; then
+ echo "Stoping because its over 80%"
+ break
+fi
+sleep 5 
 done
+
+
  
