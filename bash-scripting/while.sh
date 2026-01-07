@@ -54,7 +54,7 @@ if [ $usage -gt 80 ]; then
  echo "Stoping because its over 80%"
  break
 fi
-sleep 5 
+sleep 3 
 done
 
 
