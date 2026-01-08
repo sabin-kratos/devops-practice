@@ -12,8 +12,8 @@ elif [["$c" == "-" ]]; then
 diff=$((a - b))
 echo "diff=$diff"
 elif [[ "$c" == "*" ]]; then 
-product=$((a * b))
-echo "product=$product"
+prod=$((a * b))
+echo "product=$prod"
 elif [[ "$c" == "/" ]]; then 
 if [[ "$b" -eq 0 ]]; then
 echo "Not divisible by 0"
