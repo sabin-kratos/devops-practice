@@ -6,3 +6,12 @@ else
 echo "Wrong answer"
 fi
 
+pass="sabin"
+echo "Enter password"
+read  a
+if  [[ a -eq pass ]]; then
+echo "ACCESS LOGIN...."
+else 
+echo "DENIED"
+fi
+
