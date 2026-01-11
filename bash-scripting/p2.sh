@@ -15,3 +15,5 @@ else
 echo "DENIED"
 fi
 
+echo "---closing---"
+
