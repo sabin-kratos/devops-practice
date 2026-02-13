@@ -1,18 +1,19 @@
 #!/bin/bash
 
-echo "Enter the given number for the process:"
-echo -e "1) for file \n2) for directory"
+echo "Enter the number:"
+echo -e "1) file /n2) dictionary"
 read a
-case $a in 
-1)
-read -p "Ente the file name: " b
-touch $b
+case $a in
+1) 
+read -p "Enter file name:" file
+touch $file
 ;;
 2)
-read -p "Enter the directory name: "c
-mkdir $c
+read -p "Enter dictionary name:" dic
+mkdir $dic
 ;;
 *)
-echo "Its an error"
+echo "Invalid number:"
+;;
 esac
 
